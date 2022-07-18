@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>personal portfolio website</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+  
+ *{
+   margin: 0;
+   padding:0;
+ }
+    .navbar{
+      background: red;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: crimson;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration:  none;
+}
+.navbar .logo a span{
+    color: blue;
+    transition: all 0.3s ease;
+    
+}
+.navbar.sticky .logo a span{
+    color: #fff;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/*team section staet*/
+.teams{
+  padding: 100px; 0;
+}
+.teams .title::after{
+    content: "";
+}
+.teams .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover{
+    background: grey;
+}
+.teams .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.teams .carousel .card .text{
+  color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.text-3{
+  color: white;
+  font-size:  20px;
+  font-weight:  500;
+}
+p{
+  color: white;
+}
+.teams .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
+    transition: all 0.3s ease;
+}
+.teams .carousel .card:hover img{
+    border-color: blue;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+button{
+  width: 100px;
+  height: 40px;
+  background: crimson;
+  border:  2px solid red;
+  border-radius:  6px;
+ margin: 10px 40%;
+}
+button:hover{
+  background: transparent;
+  width: 150px;
+  height: 40px;
+  margin: 8px 33%;
+  transition: all 0.3s ease;
+}
+ a{
+  color: black;
+  font-size: 20px;
+  font-weight:  700;
+  text-decoration:  none;
+}
+
+
+/*footer*/
+footer {
+  background: #111;
+  padding: 15px 23px;
+  color: #fff;
+  text-align: center;
+}
+
+footer span a {
+  color: crimson;
+  text-decoration: none;
+}
+
+footer span a:hover {
+  text-decoration: underline;
+}
+@media(max-width:1500px){
+  button{
+    margin: 10px 45%;
+    
+  }
+}
+
+
+  </style>
+</head>
+<body>
+   <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+                           
+            </ul>
+                                <div class="text-3">And I'm a <span class="typing"></span></div>
+        </div>
+    </nav>
+
+   <section class="teams" id="teams">
+     <div class="max-width">
+       <h2 class="title">My all social account</h2>
+       <div class="carousel owl-carousel">
+         <div class="card">
+           <div class="box">
+            <a href="https://www.facebook.com/rameshkumar.chanani" target="blank"> <img src="image/facebook (1).png" alt=""></a>
+             <div class="text">Facebook Account</div>
+             <p>Visit my account click on profile.</p>
+           </div>
+         </div>
+         <br>
+         <div class="card">
+           <div class="box">
+             <a href="" target="blank"><img src="image/twitter (1).jpeg" alt=""></a>
+             <div class="text">Twitter Account</div>
+             <p> Visit my account click on profile.</p>
+           </div>
+         </div>
+         <br>
+       
+         <br>
+         <div class="card">
+           <div class="box">
+             <a href="" target="blank"><img src="image/instagram(1).jpeg" alt=""></a>
+             <div class="text">Instagram Account</div>
+             <p>Visit my account click on profile.</p>
+           </div>
+         </div>
+         <br>
+         <div class="card">
+           <div class="box">
+             <a href="https://t.me/Rameshkumarmeghwar786" target="black"><img src="image/telle (1).jpeg" alt=""></a>
+             <div class="text">Telegram Account</div>
+             <p>Visit my account click on profile.</p>
+           </div>
+         </div>
+         <br>
+         <div class="card">
+         <div class="box">
+           <a href="https://www.snapchat.com/add/rameshrathore75?share_id=zfHMKUqih7A&locale=en-PK" target="blank"><img src="image/sunapchat (1).jpeg" alt=""></a>
+           <div class="text">Sunapchat Account</div>
+           <p>Visit my account click on profile.</p>
+         </div>
+         </div>
+         <br>
+         <div class="card">
+         <div class="box">
+           <a href="https://replit.com/@RameshKumar45" target="blank"><img src="image/replit (1).png" alt=""></a>
+           <div class="text">Replit Account</div>
+           <p>Visit my account click on profile.</p>
+         </div>
+         </div>
+         <br>
+         <div class="card">
+         <div class="box">
+           <a href="https://youtube.com/channel/UCi96OBySbzCz1qqtjma048w" target="blank"><img src="image/youtube (1).jpeg" alt=""></a>
+           <div class="text">Youtube Account</div>
+           <p>Visit my account click on profile.</p>
+         </div>
+         </div>
+       </div>
+     </div>
+     
+
+   </section>
+   <button><a href="index.html">Back</a></button>
+   
+       <footer>
+         <span>Created By <a href="https://www.codingnepalweb.com">Ramesh Kumar</a> | <span class="far fa-copyright"></span> 2022 All rights reserved.</span>
+       </footer>
+<script>
+  var typed = new Typed(".typing", {
+        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".typing-2", {
+        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+</script>
+</body>
+</html>
